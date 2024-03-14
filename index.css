@@ -40,7 +40,7 @@ body {
 .word {
   color: white;
   font-size: clamp(2rem, 8vw, 10rem);
-  font-family: "Rubik", sans-serif;
+  font-family: "Space Mono", monospace;
   margin: 0rem;
   text-transform: uppercase;
   transition: opacity 250ms ease;
