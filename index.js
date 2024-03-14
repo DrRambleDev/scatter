@@ -56,7 +56,7 @@ document.getElementById("tree").onmouseover = event => {
     }
 
     iteration += 1 / 3;
-  }, 35);
+  }, 25);
 }
 
 // Declare functions
