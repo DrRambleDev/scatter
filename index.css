@@ -1,6 +1,6 @@
 :root {  
-  --green: rgb(199, 0, 57);
-  --blue: rgb(136, 8, 8);
+  --red: rgb(199, 0, 57);
+  --blood: rgb(136, 8, 8);
 }
 
 @keyframes float {
@@ -38,7 +38,7 @@ body {
 }
 
 .word {
-  color: white;
+  color: #fff;
   font-size: clamp(2rem, 8vw, 10rem);
   font-family: "Space Mono", monospace;
   margin: 0rem;
@@ -50,8 +50,17 @@ a {
   text-decoration: none;
 }
 
+
 #text:has(.fancy:hover) .word:not(.fancy:hover) {
   opacity: 0.2;
+  color: azure;
+}
+
+.word > .fancy:hover {
+  background: linear-gradient(
+    to right, 
+    color azure
+  );
 }
 
 .fancy span {
@@ -73,11 +82,12 @@ a {
 .fancy:hover > .outer > .inner > .letter {
   background: linear-gradient(
     to right,
-    var(--blue),
-    var(--green),
-    var(--blue)
+    var(--red),
+    var(--blood),
+    var(--red)
   );
   background-size: 1000%;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: background-pan 150s linear infinite;
@@ -129,5 +139,8 @@ a {
 
 .fancy:hover > .outer:nth-child(12) {
   transform: translate(120%, -30%) rotate(-10deg);
+}
+.word:hover > .outer:nth-child(13) {
+  transform: translate(67%, -20%) rotate(4deg);
 }
 
