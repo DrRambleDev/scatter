@@ -144,3 +144,8 @@ a {
   transform: translate(67%, -20%) rotate(4deg);
 }
 
+.effect3:hover {
+  animation-duration: 0.2ms;
+  color:cornflowerblue;
+}
+
