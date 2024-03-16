@@ -62,3 +62,4 @@ document.getElementById("tree").onmouseover = event => {
 // Declare functions
 
 enhance("channel-link");
+enhance("effect3");
